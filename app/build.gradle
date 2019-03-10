@@ -31,7 +31,6 @@ ext.isBeta = true
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '28.0.2'
 
     defaultConfig {
         applicationId "com.dragons.aurora"
@@ -63,22 +62,22 @@ android {
 
 dependencies {
     //UI
-    implementation 'androidx.appcompat:appcompat:1.0.0-rc02'
-    implementation 'androidx.palette:palette:1.0.0-rc02'
-    implementation 'androidx.cardview:cardview:1.0.0-rc02'
-    implementation 'androidx.preference:preference:1.0.0-rc02'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0-rc02'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
-    implementation 'com.google.android.material:material:1.0.0-rc02'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.preference:preference:1.1.0-alpha03'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
 
     //RXJava2
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 
     //Utils
     implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.nothome:javaxdelta:2.0.1'
-    implementation 'com.github.Chainfire:libsuperuser:-SNAPSHOT'
+    implementation 'eu.chainfire:libsuperuser:1.0.0.+'
     implementation 'com.scottyab:rootbeer-lib:0.0.7'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.github.percolate:caffeine:0.4.7'
@@ -86,11 +85,8 @@ dependencies {
     implementation 'commons-net:commons-net:3.6'
 
     //ButterKnife
-    repositories {
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
-    }
-    implementation 'com.jakewharton:butterknife:9.0.0-SNAPSHOT'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-SNAPSHOT'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.8.0'
